@@ -1,6 +1,7 @@
-create table USER_ROLES (
-                            USER_ID uuid,
-                            AUTHORITY varchar(225)
+create table USER_ROLES
+(
+    USER_ID   uuid,
+    AUTHORITY varchar(225)
 );
 alter table USER_ROLES
     add constraint USER_ROLES_PK primary key (USER_ID, AUTHORITY);
